@@ -1,0 +1,51 @@
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+}
+.nav-link {
+  width: fit-content;
+  text-align: center;
+  margin: 0 1.5em;
+}
+
+.nav-link:last-child {
+  width: 150px;
+  margin-right: 0;
+}
+
+a.nav-link.active {
+  border-radius: 3px;
+  transition: 200ms ease-in;
+  color: #38ef7d !important;
+  border-bottom: 4px solid #38ef7d;
+}
+
+.app__logo {
+  width: 212px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nav__btn {
+  border-style: none;
+  border-radius: 30px;
+  align-items: center;
+  display: flex !important;
+  background-color: #38ef7d;
+  justify-content: space-between;
+  padding: 10px 15px !important;
+}
+.nav__links {
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav__btn img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+}

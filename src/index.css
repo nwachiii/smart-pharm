@@ -1,13 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app__wrap {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feedback {
+  background-color: #0b529e;
+  height: fit-content;
+}
+.feedback__nav {
+  width: 90%;
+  display: flex;
+  margin: 0 auto 7em;
+  padding: 0 1.5em;
+  max-width: 1500px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedback__text {
+  row-gap: 3em;
+  width: 100%;
+  max-width: 1146px;
+  margin: 0 auto;
+  padding-bottom: 7em;
+  color: whitesmoke;
+  height: fit-content;
+}
+
+.feedback__text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600px;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 98px;
+  text-align: center;
+}
+
+.feedback img,
+.nutm nav img:first-child {
+  object-fit: contain;
+}
+
+.feedback__nav img:first-child,
+.nutm nav img:first-child {
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+}
+
+.feedback__nav img:nth-child(2) {
+  width: 22px;
+}
+
+.nutm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nutm nav {
+  width: 90%;
+  display: flex;
+  column-gap: 1em;
+  padding-top: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nutm main {
+  margin: 0 auto;
+  position: relative;
+}
+
+.nutm__img-aside {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5em;
+  position: absolute;
+  bottom: 10%;
+  left: 7.5%;
+  max-width: 659px;
+  width: 100%;
+  background-color: #019e5b;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.nutm__img-aside p {
+  font-size: 36px;
+  line-height: 49.03px;
+  font-weight: 400;
+}
+
+.nutm__img-aside h2 {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 88.52px;
+}
+
+.nutm__aside {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nutm__aside span {
+  display: flex;
+  column-gap: 1em;
+}
+
+.nutm__aside span img:first-child {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.nutm__aside span img:nth-child(2) {
+  height: 114px;
+  object-fit: contain;
+}
+
+.nutm__aside span p {
+  color: #019e5b;
 }
